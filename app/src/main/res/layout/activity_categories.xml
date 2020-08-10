@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ricknotes.proquiz.Activities.CategoriesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/categories_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/transparent"
+                android:onClick="backClick"
+                app:srcCompat="@drawable/backarrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_choose_a_topic"
+                android:textSize="24sp"
+                android:fontFamily="@font/abhaya_libre"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="16dp"
+                android:textAllCaps="true"/>
+
+
+            <Button
+                android:id="@+id/categories_general_knowledge_btn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edit_text_background_shape"
+                android:drawableEnd="@drawable/forwardarrow"
+                android:paddingStart="16dp"
+                android:onClick="categoryClick"
+                android:textAllCaps="false"
+                android:paddingEnd="16dp"
+                android:tag="9"
+                android:text="@string/string_general_knowledge"
+                android:textAlignment="viewStart"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/categories_entertainment_film_btn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edit_text_background_shape"
+                android:drawableEnd="@drawable/forwardarrow"
+                android:paddingStart="16dp"
+                android:onClick="categoryClick"
+                android:paddingEnd="16dp"
+                android:tag="11"
+                android:text="@string/string_entertainment_film"
+                android:textAlignment="viewStart"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/categories_entertainment_music_btn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edit_text_background_shape"
+                android:drawableEnd="@drawable/forwardarrow"
+                android:paddingStart="16dp"
+                android:onClick="categoryClick"
+                android:paddingEnd="16dp"
+                android:tag="12"
+                android:text="@string/string_entertainment_music"
+                android:textAlignment="viewStart"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/categories_science_nature_btn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:textAllCaps="false"
+                android:background="@drawable/edit_text_background_shape"
+                android:drawableEnd="@drawable/forwardarrow"
+                android:paddingStart="16dp"
+                android:onClick="categoryClick"
+                android:paddingEnd="16dp"
+                android:tag="17"
+                android:text="@string/string_science_and_nature"
+                android:textAlignment="viewStart"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/categories_science_computer_btn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:textAllCaps="false"
+                android:background="@drawable/edit_text_background_shape"
+                android:drawableEnd="@drawable/forwardarrow"
+                android:paddingStart="16dp"
+                android:onClick="categoryClick"
+                android:paddingEnd="16dp"
+                android:tag="18"
+                android:text="@string/string_science_computer"
+                android:textAlignment="viewStart"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/categories_science_maths_btn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:textAllCaps="false"
+                android:background="@drawable/edit_text_background_shape"
+                android:drawableEnd="@drawable/forwardarrow"
+                android:paddingStart="16dp"
+                android:onClick="categoryClick"
+                android:paddingEnd="16dp"
+                android:tag="19"
+                android:text="@string/string_science_maths"
+                android:textAlignment="viewStart"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/categories_sports_btn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:textAllCaps="false"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edit_text_background_shape"
+                android:drawableEnd="@drawable/forwardarrow"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:onClick="categoryClick"
+                android:tag="21"
+                android:text="@string/string_sports"
+                android:textAlignment="viewStart"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/categories_geography_btn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edit_text_background_shape"
+                android:drawableEnd="@drawable/forwardarrow"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:onClick="categoryClick"
+                android:tag="22"
+                android:text="@string/string_geography"
+                android:textAlignment="viewStart"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/categories_politics_btn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:layout_marginEnd="16dp"
+                android:onClick="categoryClick"
+                android:background="@drawable/edit_text_background_shape"
+                android:drawableEnd="@drawable/forwardarrow"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:tag="24"
+                android:text="@string/string_politics"
+                android:textAlignment="viewStart"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/categories_arts_btn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edit_text_background_shape"
+                android:drawableEnd="@drawable/forwardarrow"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:onClick="categoryClick"
+                android:tag="25"
+                android:text="@string/string_arts"
+                android:textAlignment="viewStart"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

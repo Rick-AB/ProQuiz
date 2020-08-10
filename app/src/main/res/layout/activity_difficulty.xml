@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ricknotes.proquiz.Activities.DifficultyActivity">
+
+    <ImageButton
+        android:id="@+id/difficulty_activity_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:onClick="backClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backarrow" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="@string/string_choose_difficulty"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/difficulty_activity_easy_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_blue_background"
+        android:onClick="difficultyClick"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:text="Easy"
+        android:tag="easy"
+        android:textColor="@color/splashScreenBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <Button
+        android:id="@+id/difficulty_activity_medium_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_blue_background"
+        android:onClick="difficultyClick"
+        android:text="Medium"
+        android:tag="medium"
+        android:textColor="@color/splashScreenBackground"
+        app:layout_constraintEnd_toEndOf="@+id/difficulty_activity_easy_btn"
+        app:layout_constraintStart_toStartOf="@+id/difficulty_activity_easy_btn"
+        app:layout_constraintTop_toBottomOf="@+id/difficulty_activity_easy_btn" />
+
+    <Button
+        android:id="@+id/difficulty_activity_hard_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_blue_background"
+        android:onClick="difficultyClick"
+        android:text="Hard"
+        android:tag="hard"
+        android:textColor="@color/splashScreenBackground"
+        app:layout_constraintEnd_toEndOf="@+id/difficulty_activity_medium_btn"
+        app:layout_constraintStart_toStartOf="@+id/difficulty_activity_medium_btn"
+        app:layout_constraintTop_toBottomOf="@+id/difficulty_activity_medium_btn" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficulty_activity_back_btn"
+        app:srcCompat="@drawable/difficultyimagebackground" />
+</androidx.constraintlayout.widget.ConstraintLayout>
